@@ -61,6 +61,7 @@ dependencies {
 
     implementation 'androidx.compose.ui:ui:1.0.0-beta07'
     implementation "androidx.compose.compiler:compiler:1.0.0-beta07"
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.0-alpha07"
     // Tooling support (Previews, etc.)
     implementation 'androidx.compose.ui:ui-tooling:1.0.0-beta07'
     // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
