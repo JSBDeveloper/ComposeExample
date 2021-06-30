@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.MaterialTheme.typography
@@ -80,6 +81,25 @@ class MainActivity : AppCompatActivity() {
                     style = typography.h6)
                 Text("Davenport, California", style = typography.body2)
                 Text("December 2018", style = typography.body2)
+            }
+        }
+    }
+
+    @Composable
+    fun MessageList() {
+        LazyColumn {
+            item {
+                Text(text = "First item")
+            }
+
+            // Add 5 items
+            items(5) { index ->
+                Text(text = "Item: $index")
+            }
+
+            // Add another single item
+            item {
+                Text(text = "Last item")
             }
         }
     }
