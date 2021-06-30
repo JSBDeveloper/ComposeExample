@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
 
     @Composable
     fun MessageList() {
-        LazyColumn {
+        LazyColumn(contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)) {
             item {
                 Text(text = "First item")
             }
